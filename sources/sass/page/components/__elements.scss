@@ -1,0 +1,62 @@
+
+.button {
+  @include font-size-22($body-font, bold);
+  letter-spacing: 0.3em;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: $blue-green-text-color;
+
+  padding: 16px 24px;
+  border: 2px solid $blue-green-text-color;
+  display: inline-block;
+
+  @include on(768px) {
+    @include font-size-16($body-font, bold);
+    padding: 12px 20px;
+  }
+}
+
+.link {
+  @include font-size-20($body-font, bold);
+  letter-spacing: 0.3em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $blue-green-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &:after {
+    @include font-size-24($font-awesome-font, normal);
+    content: "\f054";
+    margin-left: 20px;
+  }
+
+  @include on(768px) {
+    @include font-size-16($body-font, bold);
+
+    &:after {
+      @include font-size-16($font-awesome-font, normal);
+    }
+  }
+}
+
+
+.slick-dots {
+  bottom: 35px;
+
+  > li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+  }
+
+  > li.slick-active {
+    background-color: #76D7E0;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin: 0;
+}

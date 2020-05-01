@@ -1,0 +1,57 @@
+.banner-image {
+  > img {
+      width: 100%;
+  }
+}
+
+.banner-content {
+  max-width: 780px;
+  margin: auto;
+  text-align: center;
+  padding: 0 32px 122px;
+
+  > .title {
+    @include basic-title();
+
+    + .description {
+      margin-top: 20px;
+    }
+  }
+
+  > .description {
+    @include basic-description();
+
+    + .button {
+      margin-top: 32px;
+    }
+  }
+
+  > .partners {
+    margin-top: 40px;
+
+    + .button {
+      margin-top: 60px;
+    }
+
+    @include on(768px) {
+      margin-top: 20px;
+    
+      + .button {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  @include on(768px) {
+    padding-bottom: 90px;
+  }
+}
+
+.main-banner {
+  width: 100%;
+  overflow: hidden;
+
+  @include on(768px) {
+    padding-top: 100px;
+  }
+}

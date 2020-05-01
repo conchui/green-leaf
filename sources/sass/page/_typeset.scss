@@ -1,0 +1,62 @@
+/*---------------------------------------------------
+Base Typesetting
+----------------------------------------------------*/
+
+a {
+  color: $black-color;
+  text-decoration: none;
+}
+
+body, html {
+  font                    : 400 16px / 1.618 $ui-font;
+  font-variant-ligatures  : common-ligatures;
+  text-rendering          : optimizeLegibility;
+  font-feature-settings   : "kern"; /* standard */
+  font-kerning            : normal; /* Safari 7+, Firefox 24+, Chrome 33(?)+, Opera 21+*/
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+  color                   : $black-color;
+
+  @include on(mobile) { font-size: 14px; }
+}
+
+
+.font-size-48 {
+  @include font-size-48;
+}
+
+.font-size-34 {
+  @include font-size-34;
+}
+
+.font-size-24 {
+  @include font-size-24;
+}
+
+.font-size-20 {
+  @include font-size-20;
+}
+
+.font-size-18 {
+  @include font-size-18;
+}
+
+.font-size-16 {
+  @include font-size-16;
+}
+
+.font-size-14 {
+  @include font-size-14;
+}
+
+.font-size-12 {
+  @include font-size-12;
+}
+
+.font-size-10 {
+  @include font-size-10;
+}
+
+.font-size-9 {
+  @include font-size-9;
+}
